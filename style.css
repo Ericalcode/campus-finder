@@ -1,0 +1,53 @@
+:root {
+    --primary: #e94560;
+    --bg: #1a1a2e;
+    --glass: rgba(255, 255, 255, 0.08);
+}
+
+body {
+    background-color: var(--bg);
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.glass-card {
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.grid {
+    display: grid;
+    /* Auto-fit handles the resizing automatically */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.btn-claim {
+    background: var(--primary);
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr; /* Force 1 column on very small phones */
+    }
+    h2 { font-size: 1.4em; }
+}

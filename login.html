@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Login | Campus Finder</title>
+</head>
+<body class="container">
+    <div class="glass-card" style="max-width: 400px; margin: 100px auto; padding: 40px;">
+        <h2 style="text-align: center; color: #e94560;">Portal Login</h2>
+        <form action="login.php" method="POST">
+            <input type="email" name="email" placeholder="University Email" required 
+                   style="width:100%; padding:12px; margin-bottom:20px; background:rgba(255,255,255,0.1); border:none; color:white; border-radius:5px;">
+            
+            <input type="password" name="password" placeholder="Password" required 
+                   style="width:100%; padding:12px; margin-bottom:10px; background:rgba(255,255,255,0.1); border:none; color:white; border-radius:5px;">
+            
+            <div style="text-align: right; margin-bottom: 20px;">
+                <a href="forgot_password.php" style="color: #f1c40f; font-size: 0.85em; text-decoration: none; opacity: 0.8;">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn-claim" style="width: 100%; padding: 12px; font-size: 1em;">Sign In</button>
+        </form>
+        
+        <p style="text-align: center; margin-top: 20px; font-size: 0.9em; opacity: 0.7;">
+            New here? <a href="register.html" style="color: #e94560; text-decoration: none;">Create Account</a>
+        </p>
+    </div>
+</body>
+</html>

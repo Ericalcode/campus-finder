@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Post Item | Campus Finder</title>
+</head>
+<body class="container">
+    <div class="glass-card" style="max-width: 600px; margin: 40px auto;">
+        <h2 style="color: #e94560;">Post Lost/Found Item</h2>
+        <p style="font-size: 0.9em; opacity: 0.8;">Note: All posts require admin approval before appearing on the feed.</p>
+        
+        <form action="post_item.php" method="POST" enctype="multipart/form-data">
+            <div style="margin-bottom: 15px;">
+                <label>Type:</label><br>
+                <select name="type" class="glass-card" style="width: 100%; border: none; color: white; padding: 10px; margin-top: 5px;">
+                    <option value="Lost">I Lost Something</option>
+                    <option value="Found">I Found Something</option>
+                </select>
+            </div>
+
+            <input type="text" name="title" placeholder="Item Name (e.g., Black HP Laptop)" required 
+                   style="width:95%; margin:10px 0; padding:12px; border-radius: 5px; border:none; background: rgba(255,255,255,0.1); color:white;">
+            
+            <textarea name="description" placeholder="Detailed description (Color, Brand, Marks...)" required rows="4"
+                      style="width:95%; margin:10px 0; padding:12px; border-radius: 5px; border:none; background: rgba(255,255,255,0.1); color:white;"></textarea>
+            
+            <input type="text" name="location_found" placeholder="Where was it lost/found? (e.g., Library Level 2)" required 
+                   style="width:95%; margin:10px 0; padding:12px; border-radius: 5px; border:none; background: rgba(255,255,255,0.1); color:white;">
+
+            <div style="margin: 10px 0;">
+                <label>Item Image (Optional):</label><br>
+                <input type="file" name="item_image" accept="image/*" style="margin-top: 10px; color: white;">
+            </div>
+
+            <button type="submit" class="btn-claim" style="width: 100%; margin-top: 20px;">Submit for Approval</button>
+        </form>
+        <p style="text-align: center;"><a href="index.php" style="color:white; text-decoration:none;">← Back to Feed</a></p>
+    </div>
+</body>
+</html>

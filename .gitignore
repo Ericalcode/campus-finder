@@ -1,0 +1,10 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore sensitive database configs if you ever move them to a separate file
+# db_creds.php
+
+# Ignore the actual uploaded images (optional - usually better to keep the folder empty on GitHub)
+uploads/*
+!uploads/.htaccess

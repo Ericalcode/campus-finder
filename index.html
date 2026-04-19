@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Finder | Erical Web Devs</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .search-bar { width: 100%; padding: 15px; border-radius: 10px; border: none; background: rgba(255,255,255,0.1); color: white; margin-bottom: 30px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+        .badge { padding: 5px 10px; border-radius: 5px; font-size: 12px; font-weight: bold; }
+        .lost { background: #ff4757; }
+        .found { background: #2ed573; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Campus Finder</h1>
+        <input type="text" id="searchInput" class="search-bar" placeholder="Search for lost keys, electronics, bags...">
+        
+        <div id="itemsGrid" class="grid">
+            </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
